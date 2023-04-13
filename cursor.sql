@@ -24,13 +24,13 @@ begin
     declare _edad int;
     declare i int;
     
-    declare c1 cursor for select edad from empresa;		
+    declare c1 cursor for select edad from empleados;		
 			
     set suma=0;
     set i = 1;
     set total = 0;
     
-    select count(*) into total from empresa;
+    select count(*) into total from empleados;
     
     open c1;
     while i<=total do
